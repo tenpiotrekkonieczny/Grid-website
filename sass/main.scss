@@ -34,6 +34,8 @@ h1.company-name {
 	width: 100%;
 }
 
+
+
 .section-title {
 	position: relative;
 	margin: 0 auto 2em;
@@ -259,9 +261,9 @@ h1.company-name {
 	position: relative;
 	display: grid;
 	grid-template-areas:
-		"title"
-		"box"
-		"box";
+		"title title title"
+		"box box box"
+		"box box box";
 		padding: 6em 2em;
 
 		&__title {
