@@ -34,8 +34,6 @@ h1.company-name {
 	width: 100%;
 }
 
-
-
 .section-title {
 	position: relative;
 	margin: 0 auto 2em;
@@ -264,51 +262,87 @@ h1.company-name {
 		"title title title"
 		"box box box"
 		"box box box";
-		padding: 6em 2em;
+	padding: 6em 2em;
 
-		&__title {
-			grid-area: title;
+	&__title {
+		grid-area: title;
+	}
+
+	&__boxes {
+		grid-area: box;
+	}
+
+	&__box-img {
+		width: 100%;
+		object-fit: cover;
+		filter: sepia();
+	}
+
+	&__box-title {
+		margin: 0.3em 0;
+		font-size: 2.6rem;
+		color: $gold;
+		font-weight: 200;
+	}
+
+	&__box-text {
+		margin-bottom: 0.5em;
+	}
+
+	&__box-link {
+		display: block;
+		margin-bottom: 2em;
+		font-weight: bold;
+		color: $gold;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $darkgold;
 		}
+	}
 
-		&__boxes {
-			grid-area: box;
+	&__bg-icon {
+		display: none;
+	}
+}
+
+//plans
+.plans {
+	padding: 6em 2em;
+	background-color: $darker;
+
+	&__box {
+		margin: 1em 0;
+		padding: 2em 1em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: $dark;
+		cursor: none;
+
+		&:hover {
+			background-color: $darker;
+			border: 1px solid $gold;
+			transition: 0.5s;
 		}
+	}
 
-		&__box-img {
-			width: 100%;
-			object-fit: cover;
-			filter: sepia()
-		}
+	&__item {
+		margin: 1em 0;
+	}
 
-		&__box-title {
-			margin: 0.3em 0;
-			font-size: 2.6rem;
-			color: $gold;
-			font-weight: 200;
-		}
+	&__item-icon {
+		width: 50px;
+	}
 
-		&__box-text {
-			margin-bottom: 0.5em;
-		}
+	&__item-name {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: $gold;
 
-		&__box-link {
-			display: block;
-			margin-bottom: 2em;
-			font-weight: bold;
-			color: $gold;
-			text-decoration: none;
-			transition: color .3s;
-
-			&:hover {
-				color: $darkgold;
-			}
-
-		}
-
-		&__bg-icon {
-			display: none;
-		}
-
+	}
 }
 
 @import "./small";
